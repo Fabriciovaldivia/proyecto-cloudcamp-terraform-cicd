@@ -16,6 +16,7 @@ jobs:
         uses: hashicorp/setup-terraform@v4
       - name: Terraform Init
         run: terraform init
+      - run: terraform import aws_s3_bucket.example 921292479940-walter-valdivia
       - name: Terraform Plan
         run: terraform plan
       - name: Terraform Apply
