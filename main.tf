@@ -4,5 +4,6 @@ resource "aws_s3_bucket" "example" {
   tags = {
     owner    = "Walter-Valdivia"
     bootcamp = "DevOps"
+    Name     = "walter-valdivia"
   }
 }
